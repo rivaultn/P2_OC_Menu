@@ -1,0 +1,873 @@
+@font-face
+{
+    font-family: 'raleway';
+    src: url(Raleway-Regular.ttf);
+}
+html
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    width: 100%;
+    margin: 0px;
+    font-family: 'raleway';
+    background-color: white;
+    justify-content: center;
+}
+/* header */
+header
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#content-menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+#logo-reservia
+{
+    width: 30%;
+}
+/* navigation */
+.nav-links
+{
+    text-decoration: none;
+    color: black;
+    border-top: 3px #F2F2F2 solid;
+    grid-area: top;
+    padding-top: 30px;
+}
+.nav-links:hover
+{
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 3px #0065FC solid;
+}
+.nav-menu
+{
+    display: flex;
+    align-items: center;
+}
+#small-nav-bar
+{
+    display: none;
+}
+#small-nav-bar ul
+{
+    padding-left: 0px;
+}
+.small-nav-links
+{
+    border-bottom: 3px #F2F2F2 solid;
+    padding-bottom: 10px;
+}
+.small-nav-links:hover
+{
+    text-decoration: none;
+    color: #0065FC;
+    border-bottom: 3px #0065FC solid;
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+}
+nav li
+{
+    padding: 0 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* section 1-research */
+#research
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#research h1
+{
+    margin: 0%;
+}
+#research span
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#research-button
+{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    border-width: 2px;
+    padding: 10px 0px 10px 0px;
+}
+.pointer
+{
+    width: 5%;
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: center;
+    border-radius: 14px 0px 0px 14px;
+    padding-top: 1.2%;
+}
+.form-link
+{
+    font-weight: bold;
+    color: #0065FC;
+}
+#city
+{
+    border: none;
+    width: 230px;
+    height: 44px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 2px #F2F2F2 solid;
+}
+.button
+{
+    width: 10%;
+    border: none;
+    background-color: #0065FC;
+    color: #F2F2F2;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 0px 14px 14px 0px;
+    cursor: pointer;
+}
+.button i
+{
+    display: none;
+}
+#filters-research
+{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+#filters-research h2
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+#filters-buttons
+{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    list-style-type: none;
+}
+.filter-button
+{
+    margin-left: 20px;
+    font-size: 20px;
+    border: #F2F2F2 2px solid;
+    border-radius: 250px;
+}
+.filter-button:hover
+{
+    background-color: #DEEBFF;
+}
+.filter-button i
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 15px;
+    border-radius: 50%;
+}
+.filters-text
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bolder;
+}
+.information
+{
+    display: flex;
+    margin-top: 10px;
+}
+.info-icon
+{
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    padding-top: 10px;
+}
+.info-text
+{
+    padding-left: 10px;
+}
+/* section 2-accomodations */
+#accomodations-section
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.city-accomodations
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 60%;
+    flex: 0 0 60%;
+}
+.city-accomodations h2
+{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.city-accomodations-cards
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.card-link-effect
+{
+    flex: 0 0 30%;
+}
+.accomodation-card
+{
+    width: 90%;
+    font-size: 12px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+.accomodation-card:hover
+{
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
+    transition: transform 2s, filter 3s ease-in-out;
+}
+.city-accomodations-cards h3
+{
+    margin: 5px;
+}
+.city-accomodations-cards p
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.accomodation-card-picture
+{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border: white;
+    border-radius: 15px 15px 0px 0px;
+}
+.price-exemple
+{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.price
+{
+    margin: 5px;
+    font-weight: bold;
+}
+.stars-note
+{
+    padding-left: 10px;
+}
+.full-star
+{
+    color: #0065FC;
+}
+.empty-star
+{
+    color: #F2F2F2;
+}
+.show-more
+{
+    font-weight: bold;
+    padding-top: 20px;
+}
+.popular-accomodations
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 28%;
+    flex: 0 0 60%;
+}
+.pop-accomodation-card:hover
+{
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
+    transition: transform 2s, filter 3s ease-in-out;
+}
+.popular-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-head i
+{
+    width: 24px;
+}
+.popular-content
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.pop-accomodation-card
+{
+    display: flex;
+    width: 100%;
+    height: 130px;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+.pop-accomodation-card-picture
+{
+    width: 30%;
+    height: 90%;
+    object-fit: cover;
+    border: white;
+    border-radius: 15px 0px 0px 15px;
+}
+.card-content
+{
+    font-size: 15px;
+    align-items: center;
+}
+.popular-content h3
+{
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16.7px;
+}
+.popular-content p
+{
+    margin: 15px;
+}
+.pop-price-exemple
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 15px;
+}
+/* section 3-activities */
+#activities-section
+{
+    width: 95%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#activities-content
+{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#activity-cards-exemples
+{
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+}
+.multicard-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#activities-content h3
+{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.activity-cards
+{
+    width: 98%;
+    font-size: 15px;
+    border: #F2F2F2 2px solid;
+    border-radius: 15px;
+    margin: 0%;
+}
+.activity-cards:hover 
+{
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
+    transition: transform 2s, filter 3s ease-in-out;
+}
+.picture-cards
+{
+    width: 300px;
+    object-fit: cover;
+    border: #F2F2F2;
+    border-radius: 15px 15px 0px 0px;
+}
+.big-activity-card
+{
+    height: 100%;
+}
+.big-activity-picture
+{
+    height: 92%;
+}
+.medium-activity-picture
+{
+    height: 180px;
+}
+.small-activity-picture
+{
+    height: 145px;
+}
+/* footer */
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 97.2%;
+}
+.footercolumn
+{
+    width: 350px;
+}
+#footer-content h2
+{
+    text-align: left;
+}
+.footercolumn ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+.footercolumn li
+{
+    text-align: left;
+}
+/* TV and big screens */
+@media screen and (min-width: 2000px)
+{
+    header
+    {
+        height: 150px;
+        font-size: 40px;
+    }
+    #logo-reservia
+    {
+        width: 50%;
+    }
+    nav li
+    {
+        padding-right: 80px;
+    }
+    #research
+    {
+        height: 400px;
+        font-size: 30px;
+        justify-content: space-between;
+    }
+    .pointer
+    {
+        padding-top: 1.5%;
+    }
+    #filters-research h2
+    {
+        font-size: 30px;
+    }
+    .filter-button
+    {
+        font-size: 30px;
+    }
+    .button
+    {
+        font-size: 25px;
+    }
+    .info-icon
+    {
+        width: 50px;
+    }
+    #city
+    {
+        height: 95px;
+        font-size: 20px;
+    }
+    #accomodations-section
+    {
+        font-size: 30px;
+    }
+    .accomodation-card
+    {
+        font-size: 20px;
+    }
+    .city-accomodations 
+    {
+        max-width: 60%;
+    }
+    .card-content
+    {
+        font-size: 20px;
+    }
+    .popular-content h3
+    {
+        font-size: 22px;
+    }
+    #activities-section
+    {
+        font-size: 30px;
+    }
+    .activity-cards
+    {
+        width: 500px;
+        font-size: 23px;
+    }
+    .picture-cards
+    {
+        width: 100%;
+    }
+    footer
+    {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 1800px)
+{
+    nav li  
+    {
+        padding: 0 40px;
+    }
+    .form-link
+    {
+        padding-left: 40px;
+    }
+    .pointer
+    {
+        padding-top: 1%;
+    }    
+    .picture-cards
+    {
+        width: 400px;
+    }
+}
+/* basic screens */
+@media screen and (max-width: 1024px)
+{
+    .pointer
+    {
+        padding-top: 1.8%;
+    }
+    .filter-button
+    {
+        font-size: 15px;
+    }
+    .city-accomodations
+    {
+        padding: 30px;
+        margin-right: 20px;
+    }
+    .accomodation-card
+    {
+        width: 100%;
+        height: 213px;
+        font-size: 10px;
+    }
+    .card-content
+    {
+        font-size: 13px;
+    }
+    .price-exemple
+    {
+        padding-bottom: 10px;
+    }
+    .popular-content h3
+    {
+        font-size: 14px;
+    }
+    .activity-cards
+    {
+        width: 220px;
+    }
+    .picture-cards
+    {
+        width: 100%;
+    }
+    .big-activity-picture 
+    {
+        height: 88%;
+    }
+}
+/* tablets screens */
+@media screen and (max-width: 800px)
+{
+    .pointer
+    {
+        padding-top: 2.5%;
+    }
+    .button span 
+    {
+        display: none;
+    }
+    .button i
+    {
+        display: contents;
+    }
+    #filters-research h2
+    {
+        font-size: 18px;
+    }
+    .filter-button
+    {
+        margin-left: 0px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    #accomodations-section
+    {
+        flex-direction: column-reverse;
+    }
+    .city-accomodations
+    {
+        padding: 20px;
+        margin-right: 0px;
+    }
+    .popular-accomodations
+    {
+        margin-bottom: 30px;
+        max-width: 100%;
+        padding: 20px;
+    }
+    .filters-text
+    {
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .accomodation-card
+    {
+        font-size: 13px;
+    }
+    .city-accomodations
+    {
+        max-width: 100%;
+    }
+    #activities-section
+    {
+        padding: 0px 30px;
+    }
+    .activity-cards
+    {
+        width: 170px;
+    }
+    footer
+    {
+        font-size: 15px;
+    }
+}
+/* mobiles screens */
+@media screen and (max-width: 600px)
+{
+    nav li 
+    {
+        margin-left: 0px;
+    }
+    .active-link
+    {
+        border-top: 0px;
+        padding-top: 0px;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 10px;
+    }
+    #research
+    {
+        padding: 0px 10px;
+    }
+    .pointer
+    {
+        width: 15%;
+        padding-top: 5%;
+    }
+    #city
+    {
+        width: 150px;
+    }
+    .button
+    {
+        width: 15%;
+    }
+    #filters-research
+    {
+        flex-direction: column;
+    }
+    #filters-research h2
+    {
+        padding-right: 83%;
+    }
+    #filters-buttons
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .filter-button
+    {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .info-icon
+    {
+        width: 25%;
+        height: 30px;
+        padding-top: 10px;
+    }
+    #accomodations-section
+    {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .popular-accomodations
+    {
+        padding: 10px;
+        width: 95.3%;
+        border-radius: 0px;
+        margin-bottom: 0px;
+    }
+    .popular-content
+    {
+        padding-right: 10px;
+    }
+    .city-accomodations
+    {
+        background-color: white;
+        padding: 10px;
+    }
+    .city-accomodations-cards
+    {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .accomodation-card
+    {
+        border: 2px #F2F2F2 solid;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    #activities-section
+    {
+        padding: 0px 10px;
+        width: 93.5%;
+    }
+    #activities-content h3
+    {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #activity-cards-exemples
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+    .activity-cards
+    {
+        margin: 10px 0px;
+        width: 95%;
+    }
+    .picture-cards
+    {
+        height: 180px;
+    }
+    footer
+    {
+        flex-direction: column;
+        padding: 0px 10px;
+        width: 95.3%;
+    }
+    .footercolumn
+    {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #content-menu
+    {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    header
+    {
+        padding: 0px 10px;
+        width: 93.5%;
+    }
+    .form-link {
+        order: 1
+    }
+    .nav-menu {
+        order: 2;
+        width: 100%;
+        display: block
+    }
+    #logo-reservia {
+        width: 100px
+    }
+    nav ul, .nav-links-wrapper {
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
+    .nav-links-wrapper {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .nav-links {
+        display: block;
+        pointer-events: auto;
+    }
+    .nav-links-wrapper:hover
+    {
+        border-bottom: 3px #0065FC solid;
+    }
+    .nav-links:hover {
+        border-top: none;
+    }
+}
